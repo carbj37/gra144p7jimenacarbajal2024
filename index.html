@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gra1144C|Jimena Carbajal|WanderLust</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style type="text/css">
+	
+	body{
+    margin: 0;
+    background-image: url("vacation-img-3.jpg");
+    height: 100vh;
+    background-position: center;
+		background-size: cover;
+	}
+header {
+    padding: 20px;
+	background-color: rgba(12,47,88,1.00);
+}
+h1 {
+    color: rgba(240,248,255,1.00);
+    margin: 0;
+    font-size: 40px;
+    font-family: "Pacifico";
+    text-align: center;
+}
+wrapper {
+    width: 1366px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    display: block;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.50);
+}
+#Tabs1 ul li a img {
+    height: 50px;
+    width: auto;
+    background-position: center;
+    background-image: none;
+}
+#Tabs1 ul li {
+    background-image: none;
+    background-color: rgba(255,255,255,0.60);
+}
+#Tabs1 ul {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+#Tabs1  {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+    font-family: "Gill Sans";
+}
+#Tabs1 div {
+    background-image: none;
+    border: none;
+    background-color: rgba(255,255,255,0.30);
+    display: inline-block;
+    text-align: left;
+}
+#Tabs1 div input  ,#Tabs1 div select{
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-family:"Helvetica Neue";
+    text-align: left;
+    font-size: 20px;
+}
+.search {
+    background-color: none;
+    -webkit-box-shadow: 0px 0px none;
+    box-shadow: 0px 0px none;
+}
+#Tabs1 div .search {
+    background-color: rgba(0,54,100,1.00);
+    color: rgba(241,249,255,1.00);
+}
+footer {
+    color: rgba(255,255,255,1.00);
+    font-size: 16px;
+    display: block;
+    unicode-bidi: isolate;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.34);
+    padding-top: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+
+<body>
+<header>
+  <h1>WanderLust</h1>
+</header>
+<wrapper>
+<div id="Tabs1">
+  <ul>
+    <li><a href="#tabs-1"><img src="Flight-PNG.png" width="3000" height="3000" alt=""/><br>
+Flights</a></li>
+    <li><a href="#tabs-2"><img src="hotel-PNG.png" width="3000" height="3000" alt=""/><br>
+Hotels</a></li>
+    <li><a href="#tabs-3"><img src="rental-cars-PNG.png" width="3000" height="3000" alt=""/><br>
+Rentals</a></li>
+    <li><a href="#tabs-4"><img src="cruise-PNG.png" width="3000" height="3000" alt=""/><br>
+Cruises</a></li>
+    <li><a href="#tabs-5"><img src="things-to-do-PNG.png" width="3000" height="3000" alt=""/><br>
+Events</a></li>
+  </ul>
+  <div id="tabs-1">
+   <input type="text" placeholder="Leaving From">
+	<input type="text" placeholder="Going To">
+	<input type="date">
+	<select>
+	  <option value="0">Number of Travelers</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5+">5+</option>
+    </select>
+	 <input type="submit" class="search" value="Search">
+	
+  </div>
+  <div id="tabs-2"> 
+	<input type="text" placeholder="Enter Zip Code">
+	<input type="time">
+	<input type="date">
+	<input type="date">
+	<input type="time">
+	<select>
+	  <option value="0">Number of Rooms</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5+">5+</option>
+    </select>
+    <input type="submit" class="search" value="Search"></div>
+  <div id="tabs-3">
+    <input type="text" placeholder="Pickup">
+	<input type="time">
+	<input type="text" placeholder="Drop-off">
+	<input type="time">
+	<select>
+	  <option value="0">Number of Seats</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  </select>
+	  <input type="submit" class="search" value="Search">
+  </div>
+  <div id="tabs-4">
+    <input type="text" placeholder="Select Cabin">
+	<input type="text" placeholder="Departure">
+	<input type="text" placeholder="Destination">
+	<input type="date">
+	<select>
+	  <option value="0">Number of Guests</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5+">5+</option>
+    </select>
+    <input type="submit" class="search" value="Search">
+  </div>
+  <div id="tabs-5">
+    <input type="text" placeholder="Enter Zip Code">
+	<select>
+	  <option value="0">Location..</option>
+	  <option value="1">Indoor</option>
+	  <option value="2">Outdoor</option>
+    </select>
+	 <input type="time">
+	 <input type="date">
+	<select>
+	  <option value="0">Number of Attendees</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5+">5+</option>
+	  </select>
+	 
+	  <input type="submit" class="search" value="Search">
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</wrapper>
+<footer>
+	<p>© 2024, Jimena Carbajal</p> <p id="disclaimer">This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+	</footer>
+</body>
+	</head>
+</html>
